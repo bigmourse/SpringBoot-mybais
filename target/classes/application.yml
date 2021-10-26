@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/xuan?useUnicode=true&characterEncoding=UTF-8
+    username: localuser
+    password: 123456
+    dirver-class-name: com.mysql.cj.jdbc.Driver
+
+#  classpath指的就是resources路径
+#  指明配置文件中简写的包名所在文件夹
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
+  type-aliases-package: com.entity
